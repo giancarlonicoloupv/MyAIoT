@@ -49,4 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    synchronized void imprimir(final String cad) {
+        runOnUiThread(new Runnable() {
+            public void run() {
+                TextView ll = (TextView) findViewById(R.id.TextViewEstado);
+                Il.append(cad);
+                ScrollView ll1 = (ScrollView) findViewById(R.id.ScrollViewEstado);
+                ll1.fullScroll(View.FOCUS_DOWN);
+            }});
+    }
+
 }

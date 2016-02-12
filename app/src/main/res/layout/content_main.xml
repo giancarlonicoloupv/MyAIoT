@@ -38,7 +38,7 @@
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:text="     " android:id="@+id/textView7" /> <!-- textView6 -->
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                        android:text="1122334455"  android:id="@+id/textView18" /> <!-- textView10 -->
+                        android:text="Server name"  android:id="@+id/textView18" /> <!-- textView10 -->
             </LinearLayout>
 
             <LinearLayout
@@ -51,7 +51,7 @@
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="     " android:id="@+id/textView7" /> <!-- textView6 -->
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="1122334455"  android:id="@+id/textView18" /> <!-- textView10 -->
+                    android:text="Variable name"  android:id="@+id/textView18" /> <!-- textView10 -->
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +64,7 @@
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="     " android:id="@+id/textView7" /> <!-- textView6 -->
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="1122334455"  android:id="@+id/textView18" /> <!-- textView10 -->
+                    android:text="Device name"  android:id="@+id/textView18" /> <!-- textView10 -->
             </LinearLayout>
 
         </LinearLayout>
@@ -84,7 +84,6 @@
                 android:id="@+id/Grafica">
             </FrameLayout>
         </LinearLayout>
-
 
         <LinearLayout
             android:padding="@dimen/rellenodi"
@@ -130,6 +129,34 @@
                     android:id="@+id/buttonled1" />
 
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/rellenodi"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Titulo_Estado"
+                    android:id="@+id/textView554" />
+
+                <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView"
+                    android:layout_gravity="center_horizontal" >
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text=""  android:id="@+id/TextViewEstado" />
+                </ScrollView>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
